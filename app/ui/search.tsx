@@ -33,7 +33,7 @@ export default function Search({ placeholder }: { placeholder: string }) {
         }
         replace(pathname + '?' + params.toString());
       }, 1000),
-    [],
+    [pathname, replace, searchParams],
   );
 
   return (
